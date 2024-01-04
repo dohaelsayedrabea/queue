@@ -785,6 +785,29 @@ header .d-mobile {
 /********************************/
 
 
+/*   Float Button    Css      */
+
+
+/********************************/
+
+.floatButton {
+    position: fixed;
+    bottom: 44px;
+    right: 39px;
+    z-index: 1111;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+.floatButton:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+/********************************/
+
+
 /*    Header   Css      */
 
 
@@ -799,6 +822,42 @@ header ul li .btn-primary {
 ul.grt-menu li a,
 .btn.dropdown-toggle {
     font-family: 'Alexandria-Medium';
+}
+
+.languageDropdown .dropdown-menu {
+    border-radius: 15px;
+    border: 1px solid #D4D6D9;
+    padding: 10px 16px;
+    position: relative;
+}
+
+.languageDropdown .dropdown-menu a {
+    padding: 0;
+    text-transform: capitalize;
+    color: #1D1D35;
+    background: transparent !important;
+    cursor: pointer;
+}
+
+.languageDropdown .dropdown-menu a:hover {
+    background: transparent;
+}
+
+.btn-check:checked+.btn:focus-visible,
+ :not(.btn-check)+.btn:active:focus-visible,
+.btn:first-child:active:focus-visible,
+.btn.active:focus-visible,
+.btn.show:focus-visible {
+    box-shadow: none !important;
+}
+
+.btn-check:checked+.btn,
+ :not(.btn-check)+.btn:active,
+.btn:first-child:active,
+.btn.active,
+.btn.show {
+    background: transparent;
+    color: #1D1D35;
 }
 
 
@@ -1571,8 +1630,10 @@ span.mostPopular {
 
 /********************************/
 
-.partnerCaseStudy {
-    padding: 70px 0 100px 0;
+.partnerCaseStudy .container {
+    padding-top: 70px;
+    padding-bottom: 100px;
+    border-top: 1px solid #D5DAE1;
 }
 
 .buttonRightPart {
@@ -1715,6 +1776,8 @@ span.tags {
     -webkit-transition: all 1s ease-out;
     transition: all 1s ease-out;
     color: #1D1D35;
+    position: relative;
+    z-index: 111;
     font-family: 'Alexandria-Medium';
 }
 
@@ -2007,15 +2070,6 @@ input.form-control::placeholder {
     color: #fff;
     font-size: 14px;
 }
-
-
-/********************************/
-
-
-/*       Css      */
-
-
-/********************************/
 
 
 /********************************/

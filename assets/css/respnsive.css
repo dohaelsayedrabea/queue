@@ -398,6 +398,18 @@
         line-height: 38px;
         margin-bottom: 18px;
     }
+    .trustedBy {
+        padding: 100px 0 0 0;
+    }
+    .queueFields {
+        padding: 44px 0;
+    }
+    .pricingPlan {
+        padding: 100px 0 30px 0;
+    }
+    .floatButton {
+        right: 15px;
+    }
 }
 
 
