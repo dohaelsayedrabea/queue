@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tag -->
+    <meta charset="utf-8">
+    <title>Queue</title>
+    <meta name="description" content="">
+    <!-- responsive tag -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" href="assets/images/fav/fav.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav/fav.png">
+
+    <link rel="icon" type="image/png" href="assets/images/fav/fav.png">
+    <link rel="icon" sizes="any" type="image/svg+xml" href="assets/images/fav/fav.svg">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/fav/fav.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/fav/fav.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/fav/fav.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="assets/images/fav/fav.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/fav/fav.png">
+    <!-- bootstrap v5 css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <!--Font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Swiper Slider css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/swiper-bundle.min.css">
+    <!--Header css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/header.css">
+    <!-- style css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/respnsive.css">
+    <script src="assets/js/gsap.min.js"></script>
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body id="vertical">
+    <!-- ============================================================== -->
+    <!--  loading - style you can find in style.css -->
+    <!-- ============================================================== -->
+    <div class="screen">
+
+        <div class="loader">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+    </div>
+    <!-- ============================================================== -->
+    <!--  Header - style you can find in style.css -->
+    <!-- ============================================================== -->
+    <header data-lenis-prevent>
+        <div class="menu-container container">
+            <div class="grt-menu-row">
+                <div class="headerFirstPart">
+                    <div class="grt-menu-logo">
+                        <a href="#" class="grt-logo"><img src="assets/images/logo/headerLogo.svg" alt="Queue Logo"></a>
+                    </div>
+                    <div class="grt-menu-right">
+                        <div class="dropdown d-mobile">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-bs-haspopup="true" aria-bs-expanded="false">
+                                En
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">ar</a>
+                            </div>
+                        </div>
+                        <nav data-lenis-prevent>
+                            <button class="grt-mobile-button"><span class="line1"></span><span class="line2"></span><span class="line3"></span></button>
+                            <ul class="grt-menu">
+                                <li class="active"><a href="#">services one</a></li>
+                                <li><a href="#">features</a></li>
+                                <li><a href="#">pricing</a></li>
+                                <li><a href="#">Bolg</a></li>
+                                <li><a href="#">cases study</a></li>
+                                <li class="d-mobile">
+                                    <a href="#" class="btn btn-outline-primary  w-100 d-block">
+                                        Partners Login
+                                    </a>
+                                </li>
+                                <li class="d-mobile">
+                                    <a href="#" class="btn btn-primary w-100 d-block">
+                                        Book a Demo
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!---->
+                <div class="headerLastPart">
+                    <ul class="d-flex">
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-bs-haspopup="true" aria-bs-expanded="false">
+                                    En
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">ar</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-outline-primary">
+                                Partners Login
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-primary">
+                                Book a Demo
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ============================================================== -->
+    <!--  Intro - style you can find in style.css -->
+    <!-- ============================================================== -->
+    <section class="barnddescriptionPart">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xxl-10 col-xl-11 col-lg-11 col-md-12 col-sm-12">
+                    <div class="sectionTitle text-center">
+                        <span class="spanTags">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M17.6142 9.5992L15.3425 8.95004C14.3195 8.66163 13.3877 8.11551 12.6361 7.36395C11.8845 6.61239 11.3384 5.68053 11.05 4.65754L10.4008 2.38587C10.3682 2.30639 10.3127 2.23841 10.2413 2.19057C10.1699 2.14273 10.0859 2.11719 10 2.11719C9.91409 2.11719 9.8301 2.14273 9.75873 2.19057C9.68736 2.23841 9.63182 2.30639 9.59918 2.38587L8.95001 4.65754C8.6616 5.68053 8.11549 6.61239 7.36392 7.36395C6.61236 8.11551 5.6805 8.66163 4.65751 8.95004L2.38584 9.5992C2.29862 9.62396 2.22185 9.67649 2.16719 9.74883C2.11252 9.82117 2.08295 9.90937 2.08295 10C2.08295 10.0907 2.11252 10.1789 2.16719 10.2512C2.22185 10.3236 2.29862 10.3761 2.38584 10.4009L4.65751 11.05C5.6805 11.3384 6.61236 11.8846 7.36392 12.6361C8.11549 13.3877 8.6616 14.3195 8.95001 15.3425L9.59918 17.6142C9.62393 17.7014 9.67647 17.7782 9.74881 17.8329C9.82114 17.8875 9.90934 17.9171 10 17.9171C10.0907 17.9171 10.1789 17.8875 10.2512 17.8329C10.3236 17.7782 10.3761 17.7014 10.4008 17.6142L11.05 15.3425C11.3384 14.3195 11.8845 13.3877 12.6361 12.6361C13.3877 11.8846 14.3195 11.3384 15.3425 11.05L17.6142 10.4009C17.7014 10.3761 17.7782 10.3236 17.8328 10.2512C17.8875 10.1789 17.9171 10.0907 17.9171 10C17.9171 9.90937 17.8875 9.82117 17.8328 9.74883C17.7782 9.67649 17.7014 9.62396 17.6142 9.5992Z" fill="white"/>
+                            </svg>
+                            <span class="d-block">Queue Soluation</span>
+                        </span>
+                        <h3>Be online with a dedicated website to represent your brand</h3>
+                        <p> Start working with Queue that can provide everything you need to generate sales, drive traffic, connect with your loyal customers. </p>
+                        <ul>
+                            <li>
+                                <a href="#" class="btn btn-primary">Book a Demo</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-outline-primary">Contact Sales</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---->
+    <section class="desktopAdminScreen">
+        <div class="container">
+            <img class="w-100 d-block" src="assets/images/shapes/desktopimg.png" alt="image" />
+        </div>
+    </section>
+    <!-- ============================================================== -->
+    <!--- Trusted by - style you can find in style.css -->
+    <!-- ============================================================== -->
+    <section class="trustedBy">
+        <div class="container">
+            <div class="row mb-60">
+                <div class="col-lg-11 col-md-12 col-sm-12">
+                    <div class="sectionTitle text-center">
+                        <h3>Trusted by</h3>
+                        <p> They are not our clients, but partners in success</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 trustedByCol">
+                    <ul>
+                        <li>
+                            <img src="assets/images/logo/slack.svg" alt="logo" />
+                        </li>
+                        <li>
+                            <img src="assets/images/logo/amazone.svg" alt="logo" />
+                        </li>
+                        <li>
+                            <img src="assets/images/logo/woo.svg" alt="logo" />
+                        </li>
+                        <li>
+                            <img src="assets/images/logo/me.svg" alt="logo" />
+                        </li>
+                        <li>
+                            <img src="assets/images/logo/sitepoint.svg" alt="logo" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-10 col-md-11 col-sm-12 trustedByCol">
+                    <ul>
+                        <li>
+                            <img src="assets/images/logo/air.svg" alt="logo" />
+                        </li>
+                        <li>
+                            <img src="assets/images/logo/g-host.svg" alt="logo" />
+                        </li>
+                        <li>
+                            <img src="assets/images/logo/hubspot.svg" alt="logo" />
+                        </li>
+                        <li>
+                            <img src="assets/images/logo/gusto.svg" alt="logo" />
+                        </li>
+                        <li>
+                            <img src="assets/images/logo/upwork.svg" alt="logo" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================== -->
+    <!-- Services - style you can find in style.css -->
+    <!-- ============================================================== -->
+    <section class="services">
+        <div class="container">
+            <div class="row">
+                <div class="sectionTitle  text-center p-relative">
+                    <span class="spanTags">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                            <g clip-path="url(#clip0_1_1634)">
+                              <path d="M18.1328 5.08984C18.1328 4.59256 17.9353 4.11565 17.5836 3.76402C17.232 3.41239 16.7551 3.21484 16.2578 3.21484H5.00781C4.51053 3.21484 4.03362 3.41239 3.68199 3.76402C3.33036 4.11565 3.13281 4.59256 3.13281 5.08984V5.71484H18.1328V5.08984ZM14.3828 0.714844H6.88281C6.49597 0.715931 6.11894 0.836643 5.8034 1.06043C5.48786 1.28422 5.24926 1.60013 5.12031 1.96484H16.1453C16.0164 1.60013 15.7778 1.28422 15.4622 1.06043C15.1467 0.836643 14.7697 0.715931 14.3828 0.714844ZM18.1328 6.96484H3.13281C2.63553 6.96484 2.15862 7.16239 1.80699 7.51402C1.45536 7.86565 1.25781 8.34256 1.25781 8.83984V17.5898C1.25781 18.0871 1.45536 18.564 1.80699 18.9157C2.15862 19.2673 2.63553 19.4648 3.13281 19.4648H18.1328C18.6301 19.4648 19.107 19.2673 19.4586 18.9157C19.8103 18.564 20.0078 18.0871 20.0078 17.5898V8.83984C20.0078 8.34256 19.8103 7.86565 19.4586 7.51402C19.107 7.16239 18.6301 6.96484 18.1328 6.96484Z" fill="white"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_1_1634">
+                                <rect width="20" height="20" fill="white" transform="translate(0.632812 0.0898438)"/>
+                              </clipPath>
+                            </defs>
+                        </svg> 
+                        <span class="d-block">Services</span>
+                    </span>
+                    <h3>Track your business in a new way</h3>
+                    <p>Here are some services that help your business with Queue Soluation.</p>
+                </div>
+            </div>
+            <!---->
+            <!--Taps Links-->
+            <div thumbsSlider="" class="swiper mySwiper contentTapsSwiper tapSlider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="servicesLink">
+                            <img src="assets/images/icon/sales.svg" alt="images" />
+                            <span>sales</span>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="swiper-slide">
+                        <div class="servicesLink">
+                            <img src="assets/images/icon/Manage.svg" alt="images" />
+                            <span>manage</span>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="swiper-slide">
+                        <div class="servicesLink">
+                            <img src="assets/images/icon/reports.svg" alt="images" />
+                            <span>reports</span>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="swiper-slide">
+                        <div class="servicesLink">
+                            <img src="assets/images/icon/Marketing.svg" alt="images" />
+                            <span>marketing</span>
+                        </div>
+                    </div>
+                    <!---->
+                </div>
+            </div>
+            <!--Content Taps-->
+            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2 tapSlider2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="servicesContentLink">
+                            <div class="d-flex rowSliderDiv">
+                                <div class="col-lg-5 col-md-12 col-sm-12">
+                                    <div class="servicesContentLinkTextPart">
+                                        <h3>Custmoize responsive website for ordering.</h3>
+                                        <p>
+                                            Launch a website that is suitable for all devices, which allows your customers to browse and purchase your products using different and diverse payment methods.
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                Responsive website.
+                                            </li>
+                                            <li>
+                                                New, trending, and adjustable website.
+                                            </li>
+                                            <li>
+                                                comfortable and easy purchasing experience.
+                                            </li>
+                                        </ul>
+                                        <div class="d-flex buttonOutlineSection">
+                                            <a href="#" class="btn btn-link">
+                                                learn more
+                                            </a>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                                <path d="M9.54102 18.2051L15.541 12.2051L9.54102 6.20508" stroke="#4ABB82" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="col-lg-7 col-md-12 col-sm-12">
+                                    <div class="imagePart">
+                                        <img src="assets/images/services/services.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="swiper-slide">
+                        <div class="servicesContentLink">
+                            <div class="d-flex rowSliderDiv">
+                                <div class="col-lg-5 col-md-12 col-sm-12">
+                                    <div class="servicesContentLinkTextPart">
+                                        <h3>Custmoize responsive website for ordering.</h3>
+                                        <p>
+                                            Launch a website that is suitable for all devices, which allows your customers to browse and purchase your products using different and diverse payment methods.
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                Responsive website.
+                                            </li>
+                                            <li>
+                                                New, trending, and adjustable website.
+                                            </li>
+                                            <li>
+                                                comfortable and easy purchasing experience.
+                                            </li>
+                                        </ul>
+                                        <div class="d-flex buttonOutlineSection">
+                                            <a href="#" class="btn btn-link">
+                                                learn more
+                                            </a>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                                <path d="M9.54102 18.2051L15.541 12.2051L9.54102 6.20508" stroke="#4ABB82" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="col-lg-7 col-md-12 col-sm-12">
+                                    <div class="imagePart">
+                                        <img src="assets/images/services/services.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="swiper-slide">
+                        <div class="servicesContentLink">
+                            <div class="d-flex rowSliderDiv">
+                                <div class="col-lg-5 col-md-12 col-sm-12">
+                                    <div class="servicesContentLinkTextPart">
+                                        <h3>Custmoize responsive website for ordering.</h3>
+                                        <p>
+                                            Launch a website that is suitable for all devices, which allows your customers to browse and purchase your products using different and diverse payment methods.
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                Responsive website.
+                                            </li>
+                                            <li>
+                                                New, trending, and adjustable website.
+                                            </li>
+                                            <li>
+                                                comfortable and easy purchasing experience.
+                                            </li>
+                                        </ul>
+                                        <div class="d-flex buttonOutlineSection">
+                                            <a href="#" class="btn btn-link">
+                                                learn more
+                                            </a>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                                <path d="M9.54102 18.2051L15.541 12.2051L9.54102 6.20508" stroke="#4ABB82" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="col-lg-7 col-md-12 col-sm-12">
+                                    <div class="imagePart">
+                                        <img src="assets/images/services/services.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="swiper-slide">
+                        <div class="servicesContentLink">
+                            <div class="d-flex rowSliderDiv">
+                                <div class="col-lg-5 col-md-12 col-sm-12">
+                                    <div class="servicesContentLinkTextPart">
+                                        <h3>Custmoize responsive website for ordering.</h3>
+                                        <p>
+                                            Launch a website that is suitable for all devices, which allows your customers to browse and purchase your products using different and diverse payment methods.
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                Responsive website.
+                                            </li>
+                                            <li>
+                                                New, trending, and adjustable website.
+                                            </li>
+                                            <li>
+                                                comfortable and easy purchasing experience.
+                                            </li>
+                                        </ul>
+                                        <div class="d-flex buttonOutlineSection">
+                                            <a href="#" class="btn btn-link">
+                                                learn more
+                                            </a>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                                                <path d="M9.54102 18.2051L15.541 12.2051L9.54102 6.20508" stroke="#4ABB82" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="col-lg-7 col-md-12 col-sm-12">
+                                    <div class="imagePart">
+                                        <img src="assets/images/services/services.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================== -->
+    <!-- Queue is bulid for many fields - style you can find in style.css-->
+    <!-- ============================================================== -->
+    <section class="queueFields">
+        <div class="container">
+            <div class="row justify-content-center mb-70">
+                <div class="col-xxl-6 col-lg-8 col-md-10 col-sm-12">
+                    <div class="queueFieldsTitle text-center p-relative">
+                        <h3>Queue is bulid for many fields.</h3>
+                        <p>Whatever your field of trade, you can count on Queue and its support for various sectors.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="fieldsCard text-center">
+                        <span class="icon d-block">
+                            <img src="assets/images/icon/caffe.svg" alt="icon"/>
+                        </span>
+                        <h3>Cafe Shop</h3>
+                        <p>
+                            Everything you need to run your business digitally.
+                        </p>
+                    </div>
+                    <!---->
+                    <div class="fieldsCard text-center">
+                        <span class="icon d-block">
+                            <img src="assets/images/icon/shop.svg" alt="icon"/>
+                        </span>
+                        <h3>Super Markets</h3>
+                        <p>
+                            Many advantages to suit your business.
+                        </p>
+                    </div>
+                    <!---->
+                    <div class="fieldsCard text-center">
+                        <span class="icon d-block">
+                            <img src="assets/images/icon/other.svg" alt="icon"/>
+                        </span>
+                        <h3>Many Other Stores</h3>
+                        <p>
+                            Everything you need to run your business digitally
+                        </p>
+                    </div>
+                    <!---->
+                </div>
+                <!---->
+                <div class="col-xxl-6 col-lg-4 col-md-6 col-sm-12">
+                    <div class="queueFieldsImagePart">
+                        <img src="assets/images/shapes/fieldsApp.png" alt="images" />
+                    </div>
+                </div>
+                <!---->
+                <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-12">
+                    <div class="fieldsCard text-center">
+                        <span class="icon d-block">
+                            <img src="assets/images/icon/restaurants.svg" alt="icon"/>
+                        </span>
+                        <h3>restaurants</h3>
+                        <p>
+                            Everything you need to run your business digitally.
+                        </p>
+                    </div>
+                    <!---->
+                    <div class="fieldsCard text-center">
+                        <span class="icon d-block">
+                            <img src="assets/images/icon/desert.svg" alt="icon"/>
+                        </span>
+                        <h3>Dessert shop</h3>
+                        <p>
+                            Everything you need to run your business digitally.
+                        </p>
+                    </div>
+                    <!---->
+                    <div class="fieldsCard text-center">
+                        <span class="icon d-block">
+                            <img src="assets/images/icon/stationery.svg" alt="icon"/>
+                        </span>
+                        <h3>Stationery store</h3>
+                        <p>
+                            Everything you need to run your business digitally.
+                        </p>
+                    </div>
+                    <!---->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================== -->
+    <!-- So, why choose Queue? - style you can find in style.css -->
+    <!-- ============================================================== -->
+    <section class="chooseQueue">
+        <div class="container">
+            <div class="row justify-content-center gapSection">
+                <div class="col-lg-11 col-md-12 col-sm-12">
+                    <div class="sectionTitle text-center">
+                        <span class="spanTags"><i class="fa-solid fa-star"></i> <span class="d-block">Features</span> </span>
+                        <h3>So, why choose Queue?</h3>
+                        <p>We worked on all necessary things to save your time and money.</p>
+                    </div>
+                </div>
+            </div>
+            <!---->
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-30">
+                    <div class="chooseQueueCard text-center">
+                        <span class="chooseQueueCardIcon">
+                            <img src="assets/images/icon/fet_1.svg" alt="Icon"/>
+                        </span>
+                        <h3>Customize website</h3>
+                        <p>Stay connected with your team and make quick decisions wherever </p>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-30">
+                    <div class="chooseQueueCard text-center">
+                        <span class="chooseQueueCardIcon">
+                            <img src="assets/images/icon/fet_2.svg" alt="Icon"/>
+                        </span>
+                        <h3>Marketing Tools</h3>
+                        <p>Stay connected with your team and make quick decisions wherever </p>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-30">
+                    <div class="chooseQueueCard text-center">
+                        <span class="chooseQueueCardIcon">
+                            <img src="assets/images/icon/fet_3.svg" alt="Icon"/>
+                        </span>
+                        <h3>Support team</h3>
+                        <p>Stay connected with your team and make quick decisions wherever </p>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-30">
+                    <div class="chooseQueueCard text-center">
+                        <span class="chooseQueueCardIcon">
+                            <img src="assets/images/icon/fet_4.svg" alt="Icon"/>
+                        </span>
+                        <h3>Order Management </h3>
+                        <p>Stay connected with your team and make quick decisions wherever </p>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-30">
+                    <div class="chooseQueueCard text-center">
+                        <span class="chooseQueueCardIcon">
+                            <img src="assets/images/icon/fet_5.svg" alt="Icon"/>
+                        </span>
+                        <h3>Many ways to pay</h3>
+                        <p>Stay connected with your team and make quick decisions wherever </p>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-30">
+                    <div class="chooseQueueCard text-center">
+                        <span class="chooseQueueCardIcon">
+                            <img src="assets/images/icon/fet_6.svg" alt="Icon"/>
+                        </span>
+                        <h3>No commission</h3>
+                        <p>Stay connected with your team and make quick decisions wherever </p>
+                    </div>
+                </div>
+                <!---->
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================== -->
+    <!-- Flexible pricing plan  - style you can find in style.css -->
+    <!-- ============================================================== -->
+    <section class="pricingPlan">
+        <div class="container">
+            <div class="row justify-content-center mb-70">
+                <div class="col-lg-11 col-md-12 col-sm-12">
+                    <div class="sectionTitle text-center">
+                        <span class="spanTags"><i class="fa-solid fa-tags"></i> <span class="d-block">Pricing</span> </span>
+                        <h3>Flexible pricing plan for your business</h3>
+                        <p>Choose & Manage your package to what your business really needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pricingbg-shape">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 pricingCol">
+                        <div class="pricingPlanCard h-100">
+                            <div class="bodyTopPart">
+                                <div class="headerPart">
+                                    <div class="topPart">
+                                        <ul>
+                                            <li>
+                                                <span class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+                                                    <g clip-path="url(#clip0_1_1473)">
+                                                      <path d="M31.938 6.34775C31.0578 5.46722 30.0128 4.76872 28.8627 4.29216C27.7125 3.8156 26.4797 3.57031 25.2347 3.57031C23.9898 3.57031 22.757 3.8156 21.6068 4.29216C20.4567 4.76872 19.4117 5.46722 18.5315 6.34775C18.1467 6.72375 17.8075 7.14372 17.5209 7.599C16.6468 6.35403 15.4856 5.33798 14.1356 4.63685C12.7857 3.93571 11.2867 3.57014 9.76548 3.57108C7.89088 3.57148 6.05849 4.12769 4.49998 5.1694C2.94147 6.2111 1.72681 7.69152 1.00958 9.42348C0.292354 11.1554 0.104759 13.0612 0.470514 14.8997C0.83627 16.7383 1.73895 18.4272 3.06444 19.7528L14.7107 31.399C15.451 32.1388 16.4547 32.5543 17.5012 32.5543C18.5477 32.5543 19.5515 32.1388 20.2917 31.399L31.9365 19.7528C33.7112 17.9736 34.7078 15.5632 34.7078 13.0502C34.7078 10.5373 33.7126 8.12693 31.938 6.34775ZM29.8744 17.6907L18.2296 29.3369C18.0331 29.5242 17.772 29.6286 17.5005 29.6286C17.229 29.6286 16.9679 29.5242 16.7713 29.3369L5.12652 17.6907C4.48308 17.0476 3.98036 16.2779 3.65026 15.4302C3.32015 14.5826 3.16988 13.6756 3.20897 12.7667C3.24807 11.8579 3.47568 10.9672 3.87735 10.151C4.27903 9.33481 4.846 8.61106 5.54228 8.02567C6.23856 7.44028 7.04893 7.00604 7.92196 6.75051C8.795 6.49498 9.71162 6.42375 10.6136 6.54133C11.5157 6.65891 12.3834 6.96273 13.1618 7.43352C13.9401 7.9043 14.6121 8.53177 15.1351 9.27608C15.402 9.65555 15.7562 9.96531 16.1678 10.1793C16.5795 10.3932 17.0365 10.5051 17.5005 10.5055H17.5019C17.9659 10.5046 18.4229 10.3923 18.8345 10.1781C19.2462 9.96394 19.6003 9.6541 19.8674 9.27462C20.0842 8.9661 20.3272 8.67677 20.5936 8.40983C21.8243 7.17912 23.4935 6.48771 25.234 6.48771C26.9745 6.48771 28.6437 7.17912 29.8744 8.40983C31.1052 9.64055 31.7966 11.3098 31.7966 13.0502C31.7966 14.7907 31.1052 16.4599 29.8744 17.6907Z" fill="#1D1D35"/>
+                                                      <path d="M26.6559 8.14586C26.4699 8.0852 26.2737 8.06258 26.0788 8.07934C25.8839 8.09609 25.6943 8.15189 25.5215 8.2434C25.3486 8.33491 25.1959 8.46026 25.0724 8.612C24.949 8.76375 24.8573 8.93877 24.8029 9.12666C24.7485 9.31456 24.7324 9.51148 24.7557 9.7057C24.779 9.89992 24.8411 10.0875 24.9383 10.2572C25.0355 10.427 25.1659 10.5754 25.3217 10.6937C25.4775 10.812 25.6555 10.8978 25.8451 10.9459C26.2179 11.0558 26.555 11.2625 26.8219 11.5451C27.0888 11.8276 27.2761 12.1759 27.3647 12.5544C27.4382 12.8759 27.6185 13.163 27.8763 13.3688C28.134 13.5746 28.4538 13.6869 28.7836 13.6875C28.894 13.688 29.0041 13.6758 29.1117 13.6511C29.2984 13.6081 29.4747 13.5287 29.6307 13.4176C29.7866 13.3065 29.9192 13.1657 30.0208 13.0033C30.1223 12.841 30.1909 12.6602 30.2226 12.4713C30.2543 12.2824 30.2485 12.0892 30.2055 11.9025C30.0012 11.0176 29.5647 10.2031 28.9411 9.54281C28.3175 8.88254 27.5277 8.40035 26.6559 8.14586Z" fill="#4ABB82"/>
+                                                    </g>
+                                                    <defs>
+                                                      <clipPath id="clip0_1_1473">
+                                                        <rect width="35" height="35" fill="white" transform="translate(0.000488281 0.5625)"/>
+                                                      </clipPath>
+                                                    </defs>
+                                                  </svg>
+                                            </span>
+                                                <span class="text">Enterprise</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="bottomPart">
+                                        <h3>Let’s talk</h3>
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="bodyPart">
+                                    <div class="textPart">
+                                        <div class="mb-24">
+                                            <span class="d-block">Features Included :</span>
+                                            <ul>
+                                                <li>
+                                                    Custom contract and pricing
+                                                </li>
+                                                <li>
+                                                    Priority support
+                                                </li>
+                                                <li>
+                                                    Dedicated account manager
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="bodyBottomPart">
+                                <a href="#" class="btn btn-outline-primary d-block w-100">Contact Sales</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="col-lg-4 col-md-6 col-sm-12 pricingCol">
+                        <div class="pricingPlanCard h-100">
+                            <div class="bodyTopPart">
+                                <div class="headerPart">
+                                    <div class="topPart">
+                                        <ul>
+                                            <li>
+                                                <span class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+                                                    <g clip-path="url(#clip0_1_1415)">
+                                                      <path d="M31.7017 7.82508L23.2935 2.32002C21.5212 1.18519 19.459 0.58622 17.3545 0.595067C15.2501 0.603915 13.193 1.2202 11.4303 2.36989L3.24713 7.82581C2.24713 8.49041 1.42724 9.39227 0.860646 10.4509C0.294048 11.5095 -0.00162933 12.6919 6.75295e-06 13.8926V22.2325C-0.00160524 23.4332 0.294083 24.6156 0.86068 25.6742C1.42728 26.7328 2.24715 27.6346 3.24713 28.2992L11.4303 33.7551C13.1853 34.9249 15.2453 35.5533 17.3544 35.5622C19.4635 35.5711 21.5288 34.96 23.2935 33.805L31.7017 28.3014C32.7162 27.6397 33.5492 26.735 34.1252 25.6696C34.7012 24.6041 35.0019 23.4116 35 22.2005V13.9247C35.0019 12.7137 34.7012 11.5214 34.1252 10.4562C33.5491 9.39095 32.7161 8.48652 31.7017 7.82508ZM32.0833 22.2005C32.0843 22.9272 31.9037 23.6426 31.558 24.2818C31.2123 24.921 30.7124 25.4638 30.1038 25.8609L21.6956 31.3656C20.4034 32.1922 18.9001 32.6283 17.3662 32.6217C15.8323 32.6152 14.3328 32.1662 13.0477 31.3286L4.86486 25.8727C4.26487 25.4739 3.77296 24.9328 3.43301 24.2976C3.09307 23.6624 2.91568 22.953 2.91667 22.2325V13.8926C2.91568 13.1722 3.09307 12.4627 3.43301 11.8276C3.77296 11.1924 4.26487 10.6513 4.86486 10.2525L13.0482 4.79656C14.3275 3.94386 15.8291 3.48577 17.3665 3.47918C18.904 3.4726 20.4095 3.91781 21.6961 4.75952L30.1042 10.2646C30.7129 10.6615 31.2127 11.2042 31.5584 11.8434C31.904 12.4826 32.0844 13.198 32.0833 13.9247V22.2005Z" fill="white"/>
+                                                      <path d="M28.3407 12.4378L21.6841 16.7871C20.3924 17.6107 18.8908 18.0449 17.3589 18.038C15.827 18.031 14.3294 17.5832 13.0452 16.7479L6.67231 12.4895C6.35073 12.278 5.95857 12.2022 5.58133 12.2786C5.20409 12.355 4.87236 12.5775 4.65846 12.8975C4.44456 13.2175 4.36584 13.6091 4.43947 13.9869C4.5131 14.3647 4.7331 14.6981 5.05151 14.9143L11.426 19.1747C12.8115 20.0934 14.3917 20.6771 16.0417 20.8798V29.7291C16.0417 30.1159 16.1953 30.4868 16.4688 30.7603C16.7423 31.0338 17.1132 31.1874 17.5 31.1874C17.8868 31.1874 18.2577 31.0338 18.5312 30.7603C18.8047 30.4868 18.9583 30.1159 18.9583 29.7291V20.8666C20.5039 20.6448 21.9814 20.0841 23.2849 19.2246L29.9356 14.8787C30.1008 14.7763 30.2439 14.6418 30.3563 14.4832C30.4688 14.3247 30.5485 14.1452 30.5906 13.9554C30.6327 13.7657 30.6364 13.5694 30.6016 13.3781C30.5668 13.1869 30.494 13.0045 30.3877 12.8418C30.2814 12.679 30.1436 12.5392 29.9824 12.4305C29.8212 12.3218 29.64 12.2464 29.4492 12.2088C29.2585 12.1711 29.0622 12.172 28.8718 12.2113C28.6814 12.2506 28.5009 12.3276 28.3407 12.4378Z" fill="#4ABB82"/>
+                                                    </g>
+                                                    <defs>
+                                                      <clipPath id="clip0_1_1415">
+                                                        <rect width="35" height="35" fill="white" transform="translate(0 0.5625)"/>
+                                                      </clipPath>
+                                                    </defs>
+                                                  </svg>
+                                            </span>
+                                                <span class="text">Starter</span>
+                                            </li>
+                                            <li>
+                                                <span class="mostPopular">
+                                                    most popuLar
+                                                </span>
+                                            </li>
+                                        </ul>
+                                        <span>Starting from</span>
+                                    </div>
+                                    <div class="bottomPart">
+                                        <h3>KD 175<span>/per year</span></h3>
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="bodyPart">
+                                    <div class="textPart">
+                                        <div class="mb-24">
+                                            <span class="d-block">Features Included :</span>
+                                            <ul>
+                                                <li>
+                                                    1 Branch
+                                                </li>
+                                                <li>
+                                                    1 User
+                                                </li>
+                                                <li>
+                                                    50 items
+                                                </li>
+                                                <li>
+                                                    Order Management
+                                                </li>
+                                                <li>
+                                                    Stock Management
+                                                </li>
+                                                <li>
+                                                    Reporting
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mb-24">
+                                            <span class="d-block">ADD-ONS :</span>
+                                            <ul>
+                                                <li>
+                                                    Extra Branch – 5 KD
+                                                </li>
+                                                <li>
+                                                    Extra User – 5 KD
+                                                </li>
+                                                <li>
+                                                    50 Extra Items – 5 KD
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="bodyBottomPart">
+                                <a href="#" class="btn btn-outline-primary d-block w-100">Contact Sales</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="col-lg-4 col-md-6 col-sm-12 pricingCol">
+                        <div class="pricingPlanCard h-100">
+                            <div class="bodyTopPart">
+                                <div class="headerPart">
+                                    <div class="topPart">
+                                        <ul>
+                                            <li>
+                                                <span class="icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="36" viewBox="0 0 35 36" fill="none">
+                                                    <path d="M25.3458 29.7292H9.65418C8.65171 29.7315 7.67885 29.3894 6.89839 28.7603C6.11792 28.1311 5.57719 27.253 5.36668 26.2729L2.81459 14.3583C2.63921 13.6085 2.70576 12.8224 3.00471 12.1127C3.30367 11.403 3.81966 10.8062 4.47871 10.4078C5.13777 10.0095 5.90603 9.83005 6.67335 9.89526C7.44067 9.96047 8.16763 10.267 8.75001 10.7708L11.3604 12.9875L14.4667 8.32083C14.7973 7.8184 15.2476 7.40597 15.777 7.12058C16.3065 6.83519 16.8985 6.68579 17.5 6.68579C18.1015 6.68579 18.6935 6.83519 19.223 7.12058C19.7524 7.40597 20.2027 7.8184 20.5333 8.32083L23.6396 12.9875L26.25 10.7708C26.8329 10.2811 27.5545 9.9862 28.3135 9.92738C29.0725 9.86856 29.8309 10.0488 30.4822 10.4429C31.1336 10.8369 31.6453 11.425 31.9455 12.1245C32.2457 12.8241 32.3194 13.6002 32.1563 14.3437L29.6042 26.2583C29.3976 27.2363 28.8625 28.114 28.0877 28.7455C27.313 29.3769 26.3453 29.7241 25.3458 29.7292ZM6.38751 12.8562C6.25211 12.8551 6.11967 12.8958 6.00834 12.9729C5.88559 13.0429 5.78748 13.1492 5.72744 13.2771C5.66739 13.405 5.64836 13.5483 5.67293 13.6875L8.22501 25.6021C8.29616 25.9337 8.48071 26.2302 8.74688 26.4405C9.01306 26.6508 9.34421 26.7617 9.68334 26.7542H25.3458C25.685 26.7617 26.0161 26.6508 26.2823 26.4405C26.5485 26.2302 26.733 25.9337 26.8042 25.6021L29.3271 13.6875C29.3597 13.5388 29.345 13.3836 29.2849 13.2437C29.2249 13.1037 29.1226 12.9861 28.9923 12.9073C28.862 12.8285 28.7103 12.7925 28.5585 12.8042C28.4067 12.816 28.2624 12.875 28.1458 12.9729L25.5208 15.175C25.2057 15.4368 24.8389 15.6292 24.4444 15.7397C24.0499 15.8503 23.6366 15.8765 23.2313 15.8167C22.8255 15.7585 22.4365 15.6154 22.0898 15.3968C21.743 15.1782 21.4462 14.8889 21.2188 14.5479L18.1125 9.88124C18.0464 9.77891 17.9557 9.69477 17.8487 9.6365C17.7417 9.57824 17.6218 9.54771 17.5 9.54771C17.3782 9.54771 17.2583 9.57824 17.1513 9.6365C17.0443 9.69477 16.9536 9.77891 16.8875 9.88124L13.7813 14.6062C13.5538 14.9473 13.257 15.2365 12.9103 15.4551C12.5635 15.6738 12.1745 15.8168 11.7688 15.875C11.3635 15.9348 10.9501 15.9086 10.5556 15.7981C10.1611 15.6875 9.79434 15.4951 9.47918 15.2333L6.85418 13.0312C6.72466 12.9188 6.55903 12.8567 6.38751 12.8562Z" fill="#1D1D35"/>
+                                                    <path d="M17.5 23.8958C19.1108 23.8958 20.4167 22.59 20.4167 20.9792C20.4167 19.3683 19.1108 18.0625 17.5 18.0625C15.8892 18.0625 14.5833 19.3683 14.5833 20.9792C14.5833 22.59 15.8892 23.8958 17.5 23.8958Z" fill="#4ABB82"/>
+                                                </svg>
+                                            </span>
+                                                <span class="text">Queue Pro</span>
+                                            </li>
+                                        </ul>
+                                        <span>Starting from</span>
+                                    </div>
+                                    <div class="bottomPart">
+                                        <h3>KD 250<span>/per year</span></h3>
+                                    </div>
+                                </div>
+                                <!---->
+                                <div class="bodyPart">
+                                    <div class="textPart">
+                                        <div class="mb-24">
+                                            <span class="d-block">Same startet plan +</span>
+                                            <ul>
+                                                <li>
+                                                    Pro Reports
+                                                </li>
+                                                <li>
+                                                    Pro Marketing
+                                                </li>
+                                                <li>
+                                                    Pro Support
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="mb-24">
+                                            <span class="d-block">ADD-ONS :</span>
+                                            <ul>
+                                                <li>
+                                                    Extra Branch – 5 KD
+                                                </li>
+                                                <li>
+                                                    Extra User – 5 KD
+                                                </li>
+                                                <li>
+                                                    50 Extra Items – 5 KD
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---->
+                            <div class="bodyBottomPart">
+                                <a href="#" class="btn btn-outline-primary d-block w-100">Contact Sales</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================== -->
+    <!-- Testimonial - style you can find in style.css -->
+    <!-- ============================================================== -->
+    <section class="testimonialSection">
+        <div class="container">
+            <div class="row">
+                <div class="sectionTitle text-center">
+                    <span class="spanTags mb-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.66669 10.5587C1.66669 5.9563 5.39765 2.22534 10 2.22534C14.6024 2.22534 18.3334 5.9563 18.3334 10.5587C18.3334 15.161 14.6024 18.892 10 18.892C5.39765 18.892 1.66669 15.161 1.66669 10.5587ZM7.30842 12.527C7.01481 12.1726 6.48948 12.1233 6.13506 12.4169C5.78065 12.7106 5.73135 13.2359 6.02495 13.5903C7.09122 14.8774 8.52644 15.5587 10 15.5587C11.4736 15.5587 12.9089 14.8774 13.9751 13.5903C14.2687 13.2359 14.2194 12.7106 13.865 12.4169C13.5106 12.1233 12.9853 12.1726 12.6916 12.527C11.9169 13.4622 10.9393 13.892 10 13.892C9.06077 13.892 8.0831 13.4622 7.30842 12.527Z" fill="white"/>
+                        </svg>
+                        <span class="d-block">Testimonial</span>
+                    </span>
+                </div>
+            </div>
+            <!---->
+            <div class="row">
+                <!-- Swiper -->
+                <div class="swiper mySwiper testimonial">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 col-md-12 col-sm-12">
+                                    <div class="testimonialCard text-center">
+                                        <blockquote class="blockquote">
+                                            <img class="blockquoteTopImage" src="assets/images/icon/blockquotetop.svg" alt="image" />
+                                            <img class="blockquoteBottomImage" src="assets/images/icon/blockquotebottom.svg" alt="image" />
+                                            <div class="blockquoteText"> Queue dashboard is something I recommend to every other restaurant owner. I am also impressed with Queue quality after-sale experience, especially their customer support.</div>
+                                        </blockquote>
+                                        <div class="clientImages">
+                                            <img src="assets/images/client/client.png" alt="Testimonial Image" />
+                                        </div>
+                                        <div class="testimonialInfo">
+                                            <h4>Seluman El-Qassem</h4>
+                                            <p>CEO & Founder at twins restaurant</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="swiper-slide">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 col-md-12 col-sm-12">
+                                    <div class="testimonialCard text-center">
+                                        <blockquote class="blockquote">
+                                            <img class="blockquoteTopImage" src="assets/images/icon/blockquotetop.svg" alt="image" />
+                                            <img class="blockquoteBottomImage" src="assets/images/icon/blockquotebottom.svg" alt="image" />
+                                            <div class="blockquoteText"> Queue dashboard is something I recommend to every other restaurant owner. I am also impressed with Queue quality after-sale experience, especially their customer support.</div>
+                                        </blockquote>
+                                        <div class="clientImages">
+                                            <img src="assets/images/client/client.png" alt="Testimonial Image" />
+                                        </div>
+                                        <div class="testimonialInfo">
+                                            <h4>Seluman El-Qassem</h4>
+                                            <p>CEO & Founder at twins restaurant</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="swiper-slide">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 col-md-12 col-sm-12">
+                                    <div class="testimonialCard text-center">
+                                        <blockquote class="blockquote">
+                                            <img class="blockquoteTopImage" src="assets/images/icon/blockquotetop.svg" alt="image" />
+                                            <img class="blockquoteBottomImage" src="assets/images/icon/blockquotebottom.svg" alt="image" />
+                                            <div class="blockquoteText"> Queue dashboard is something I recommend to every other restaurant owner. I am also impressed with Queue quality after-sale experience, especially their customer support.</div>
+                                        </blockquote>
+                                        <div class="clientImages">
+                                            <img src="assets/images/client/client.png" alt="Testimonial Image" />
+                                        </div>
+                                        <div class="testimonialInfo">
+                                            <h4>Seluman El-Qassem</h4>
+                                            <p>CEO & Founder at twins restaurant</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================== -->
+    <!-- Partners cases study - style you can find in style.css -->
+    <!-- ============================================================== -->
+    <section class="partnerCaseStudy">
+        <div class="container">
+            <div class="row align-items-end gapSection">
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <div class="sectionTitle">
+                        <h3>Partners cases study</h3>
+                        <p>Get to know our customers' success stories and their experience with Queue.</p>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="buttonRightPart">
+                        <a href="#" class="btn btn-outline-primary">
+                            View More Cases
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!---->
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="partnerCaseStudyCard">
+                        <a href="#" class="d-block w-100">
+                            <div class="imagePart">
+                                <img class="d-block w-100" src="assets/images/casestudy/post1.png" alt="Images" />
+                            </div>
+                            <div class="textPart">
+                                <span class="d-block dateSpan">
+                                    Mohaned Tark • 20 Jan 2023
+                                </span>
+                                <h3>McDonald's and the story of increasing profits through McDonald's and the story of increasing profits through</h3>
+                                <p>
+                                    Ahmed Khalifa Tells the importance of electronic marketing in the management importance of electronic marketing in the management
+                                </p>
+                                <span class="tags">Restaurant Marketing</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="partnerCaseStudyCard">
+                        <a href="#" class="d-block w-100">
+                            <div class="imagePart">
+                                <img class="d-block w-100" src="assets/images/casestudy/post2.png" alt="Images" />
+                            </div>
+                            <div class="textPart">
+                                <span class="d-block dateSpan">
+                                    Mohaned Tark • 20 Jan 2023
+                                </span>
+                                <h3>Five guys owners Tell the importance of electronic marketing in the management electronic marketing in the management</h3>
+                                <p>
+                                    In five guys we found queue is easy to manage our bus queue is easy to manage
+                                </p>
+                                <span class="tags">Restaurant Marketing</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!---->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="partnerCaseStudyCard">
+                        <a href="#" class="d-block w-100">
+                            <div class="imagePart">
+                                <img class="d-block w-100" src="assets/images/casestudy/post3.png" alt="Images" />
+                            </div>
+                            <div class="textPart">
+                                <span class="d-block dateSpan">
+                                    Mohaned Tark • 20 Jan 2023
+                                </span>
+                                <h3>New ways to manage KFC restaurants</h3>
+                                <p>
+                                    Moayed Tells the importance of electronic marketing in the management restaurant ...
+                                </p>
+                                <span class="tags">Restaurant Marketing</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================== -->
+    <!-- What The FAQ - style you can find in style.css -->
+    <!-- ============================================================== -->
+    <section class="questionSection">
+        <img class="starShapeTop" src="assets/images/shapes/starTop.svg" alt="images" />
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-12">
+                    <div class="sectionTitle text-center">
+                        <span class="spanTags">
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.5 16.5227C4.58812 15.492 2.5 12.7133 2.5 9.45016C2.5 5.31079 5.86062 1.95016 10 1.95016C14.1394 1.95016 17.5 5.31079 17.5 9.45016C17.5 11.7839 16.3625 14.152 14.2244 15.5933C12.5975 16.6895 10.5906 17.987 9.425 18.7352C9.04063 18.982 8.55188 18.9995 8.15063 18.7802C7.74938 18.5608 7.5 18.1402 7.5 17.6833V16.5227ZM10.4919 11.8227V11.4814C10.4919 10.4714 11.0869 10.112 11.5725 9.72704C12.1044 9.30516 12.5506 8.85829 12.6713 8.12517C12.8056 7.30767 12.6275 6.67641 12.3081 6.20391C11.83 5.49516 11.0031 5.13641 10.2744 5.08454C7.695 4.90016 7.08875 7.41267 7.08875 7.41267C7.00812 7.74829 7.21438 8.08579 7.55 8.16704C7.885 8.24767 8.22312 8.04141 8.30375 7.70579C8.30375 7.70579 8.66187 6.22204 10.185 6.33141C10.5706 6.35891 11.0194 6.52829 11.2725 6.90329C11.4406 7.15267 11.5087 7.49079 11.4375 7.92204C11.3937 8.19079 11.2375 8.36579 11.06 8.52767C10.8806 8.69017 10.6775 8.83767 10.4788 8.99954C9.83688 9.52329 9.24188 10.1633 9.24188 11.4814V11.8208C9.24188 11.8208 9.2425 11.9452 9.28437 12.0464C9.38375 12.2889 9.59625 12.4452 9.88188 12.4452C10.2088 12.4452 10.4719 12.1583 10.4881 11.8914C10.49 11.8658 10.4919 11.8227 10.4919 11.8227ZM9.87125 13.0708C9.48375 13.0708 9.16875 13.3852 9.16875 13.7727C9.16875 14.1602 9.48375 14.4752 9.87125 14.4752C10.2588 14.4752 10.5737 14.1602 10.5737 13.7727C10.5737 13.3852 10.2588 13.0708 9.87125 13.0708Z" fill="white"/>
+                            </svg>                             
+                            <span class="d-block">FAQ</span>
+                        </span>
+                        <h3>What the FAQ ?</h3>
+                        <p>Most frequently asked questions can be found here, explore more questions if there is more.</p>
+                    </div>
+                </div>
+            </div>
+            <!---->
+            <div class="row">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Is Queue an app ?
+                        </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-xxl-9 col-lg-9 col-md-11 col-sm-12">
+                                        <p>
+                                            Queue dashboard is something I recommend to every other restaurant owner. I am also impressed with Queue quality after-sale experience, especially their customer support.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Which countries is Queue available in ?
+                        </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-xxl-9 col-lg-9 col-md-11 col-sm-12">
+                                        <p>
+                                            Queue dashboard is something I recommend to every other restaurant owner. I am also impressed with Queue quality after-sale experience, especially their customer support.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Is Queue suitable for small businesses ?
+                        </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-xxl-9 col-lg-9 col-md-11 col-sm-12">
+                                        <p>
+                                            Queue dashboard is something I recommend to every other restaurant owner. I am also impressed with Queue quality after-sale experience, especially their customer support.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                How long do you provide support ?
+                        </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-xxl-9 col-lg-9 col-md-11 col-sm-12">
+                                        <p>
+                                            Queue dashboard is something I recommend to every other restaurant owner. I am also impressed with Queue quality after-sale experience, especially their customer support.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                Can I try it before I subscribe and pay ?
+                        </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-xxl-9 col-lg-9 col-md-11 col-sm-12">
+                                        <p>
+                                            Queue dashboard is something I recommend to every other restaurant owner. I am also impressed with Queue quality after-sale experience, especially their customer support.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                </div>
+            </div>
+            <!---->
+            <div class="row">
+                <div class="viewmoreButtonPart text-center">
+                    <a href="#" class="btn btn-viewMore btn-outline-primary">View More FAQ</a>
+                </div>
+            </div>
+        </div>
+        <img class="starShapeBottom" src="assets/images/shapes/starBottom.svg" alt="images" />
+    </section>
+    <!-- ============================================================== -->
+    <!-- Ready to get started - style you can find in style.css -->
+    <!-- ============================================================== -->
+    <section class="readyGetStarted">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-12 col-sm-12">
+                    <div class="sectionTitle text-center">
+                        <h3>Ready to get started</h3>
+                        <p> Let's come together and showcase how we can attain growth your business. </p>
+                        <ul class="buttonOptionGroup">
+                            <li>
+                                <a href="#" class="btn btn-primary">Book a Demo</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-outline-primary">Contact Sales</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!---->
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-md-11 col-sm-12 p-relative">
+                    <img class="yellowStarImage" src="assets/images/shapes/star-yellow.svg" alt="images" />
+                    <img class="ipadVectorImage" src="assets/images/shapes/ipadVectorImage.svg" alt="images" />
+                    <div class="mainImage">
+                        <img class="w-100 d-block" src="assets/images/shapes/IpadPro.png" alt="image" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============================================================== -->
+    <!-- Footer  - style you can find in style.css -->
+    <!-- ============================================================== -->
+    <footer>
+        <div class="topFooterPart">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-8 col-lg-6 col-md-12 col-sm-12">
+                        <div class="subscripeTextPart">
+                            <h3>Subscribe to our newsletter to stay in touch.</h3>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="col-xxl-4 col-lg-6 col-md-12 col-sm-12">
+                        <div class="formContentPart">
+                            <span class="d-block">Sign up to receive updates and feature releases to your email.</span>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button">Subscribe</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---->
+        <div class="container border-bottom">
+            <div class="middleFooterPart">
+                <div class="list">
+                    <div class="logoPart">
+                        <img src="assets/images/logo/footerLogo.svg" alt="images" />
+                    </div>
+                    <!---->
+                    <div class="footerNavPart">
+                        <ul>
+                            <li>
+                                <a href="#">Services</a>
+                            </li>
+                            <li>
+                                <a href="#">Features</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                Pricing
+                            </a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ’s</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!---->
+                    <div class="footerSocialLink">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---->
+        <div class="footerBottom">
+            <div class="container">
+                <ul>
+                    <li>
+                        <span class="d-block">
+                            © 2023 Queue. All right reserved
+                        </span>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Terms of Service
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!---->
+    </footer>
+    <!-- ============================================================== -->
+    <!-- JS Files-->
+    <!-- ============================================================== -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!--JQuery Js-->
+    <script src="assets/js/jQuery.js"></script>
+    <!--ScrollTrigger-->
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <!--lenis-->
+    <script src="assets/js/lenis.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/script_lenis.js"></script>
+    <!-- Swiper JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--Header Js-->
+    <script src="assets/js/header.js"></script>
+    <!--Main Js-->
+    <script src="assets/js/main.js"></script>
+    <!--Swiper Tap Slider-->
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper.tapSlider", {
+            spaceBetween: 25,
+            slidesPerView: 1.5,
+            freeMode: true,
+            watchSlidesProgress: true,
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                },
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 45,
+                }
+            }
+        });
+        var swiper2 = new Swiper(".mySwiper2.tapSlider2", {
+            spaceBetween: 10,
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    </script>
+    <!---->
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper.testimonial", {
+            spaceBetween: 45,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+
+</html>

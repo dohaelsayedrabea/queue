@@ -1,0 +1,494 @@
+@charset "utf-8";
+
+/********************************/
+
+
+/*      Css      */
+
+
+/********************************/
+
+@media screen and (max-width: 2000px) {}
+
+
+/********************************/
+
+
+/*      Css      */
+
+
+/********************************/
+
+@media only screen and (max-width: 1900px) {}
+
+
+/********************************/
+
+
+/*      Css      */
+
+
+/********************************/
+
+@media screen and (max-width: 1750px) {}
+
+
+/********************************/
+
+
+/*      Css      */
+
+
+/********************************/
+
+@media screen and (max-width: 1200px) {
+    .barnddescriptionPart .sectionTitle h3 {
+        font-size: 40px;
+        line-height: 54px;
+    }
+    .barnddescriptionPart .sectionTitle p {
+        padding: 0 6%;
+    }
+}
+
+
+/********************************/
+
+
+/*      Css      */
+
+
+/********************************/
+
+@media screen and (max-width: 1400px) {
+    .pricingPlanCard .headerPart .bottomPart h3 {
+        font-size: 30px;
+    }
+    .pricingPlanCard .headerPart .topPart ul li span.text {
+        font-size: 22px;
+    }
+    .pricingPlanCard .headerPart .topPart ul li span.icon {
+        width: 50px;
+        height: 50px;
+        line-height: 49px;
+    }
+    .bodyBottomPart .btn-outline-primary {
+        padding: 10px 10px;
+        font-size: 15px;
+    }
+    .pricingPlanCard .bodyPart .textPart ul li {
+        font-size: 15px;
+    }
+    .testimonialCard .blockquote {
+        font-size: 24px;
+        line-height: 37px;
+    }
+    .partnerCaseStudyCard .textPart h3 {
+        font-size: 22px;
+    }
+    .partnerCaseStudyCard .textPart p {
+        font-size: 15px;
+    }
+}
+
+
+/********************************/
+
+
+/*      Css      */
+
+
+/********************************/
+
+@media only screen and (max-width: 1380px) {
+    ul.grt-menu li a {
+        padding: 0px 16.5px;
+        font-size: 15px;
+    }
+    .headerFirstPart {
+        gap: 35px;
+    }
+    .servicesContentLinkTextPart {
+        padding-right: 2%;
+    }
+    .servicesContentLinkTextPart h3 {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .readyGetStarted .sectionTitle {
+        background-position: 11px 18px;
+        margin-bottom: 75px;
+        background-size: 144px;
+    }
+}
+
+@media only screen and (max-width: 1270px) {
+    .sectionTitle h3 {
+        font-size: 42px;
+        line-height: 60px;
+    }
+    .sectionTitle p {
+        padding: 0 10%;
+        font-size: 18px;
+    }
+    .sectionTitle {
+        font-size: 20px;
+    }
+}
+
+
+/********************************/
+
+
+/*      Css      */
+
+
+/********************************/
+
+@media (max-width:1200px) {
+    header .d-mobile {
+        display: block !important;
+    }
+    .grt-menu-right {
+        display: flex;
+        align-items: center;
+        gap: 45px;
+    }
+    .grt-menu-right .dropdown {
+        height: 49px;
+    }
+    .servicesContentLinkTextPart h3 {
+        font-size: 28px;
+    }
+    .servicesContentLinkTextPart p {
+        font-size: 17px;
+    }
+    .servicesContentLinkTextPart ul li {
+        font-size: 17px;
+    }
+    .readyGetStarted .sectionTitle {
+        margin-bottom: 75px;
+        background-size: 114px;
+        background-position: 0px 18px;
+    }
+}
+
+@media (max-width:1350px) {
+    .subscripeTextPart {
+        padding-right: 3%;
+    }
+}
+
+
+/********************************/
+
+
+/*      Css      */
+
+
+/********************************/
+
+@media screen and (max-width: 1197px) {
+    .chooseQueueCard {
+        padding: 38px 11px;
+    }
+    .chooseQueueCard h3 {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 13px;
+    }
+    .chooseQueueCard p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .chooseQueue .sectionTitle h3,
+    .pricingPlan .sectionTitle h3 {
+        font-size: 35px;
+        line-height: 45px;
+        margin-bottom: 12px;
+    }
+    .chooseQueue .sectionTitle p,
+    .pricingPlan .sectionTitle p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .spanTags span {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .partnerCaseStudyCard .textPart h3 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    span.mostPopular {
+        margin-top: 15px;
+        padding: 2px 8px;
+        font-size: 12px;
+        display: inline-block;
+    }
+    .bodyBottomPart .btn-outline-primary {
+        padding: 10px;
+    }
+    .trustedBy ul {
+        gap: 30px;
+    }
+    .subscripeTextPart h3 {
+        font-size: 30px;
+        line-height: 47px;
+    }
+    .formContentPart span {
+        font-size: 18px;
+    }
+}
+
+
+/********************************/
+
+
+/*      Css      */
+
+
+/********************************/
+
+@media screen and (max-width: 991px) {
+    .rowSliderDiv {
+        flex-wrap: wrap;
+    }
+    .servicesContentLink .imagePart img {
+        margin-top: 25px;
+    }
+    .sectionTitle h3 {
+        font-size: 38px;
+        line-height: 52px;
+    }
+    .sectionTitle h3 {
+        padding: 0;
+    }
+    .sectionTitle p {
+        padding: 0 5%;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .partnerCaseStudyCard {
+        margin-bottom: 25px;
+    }
+    .pricingCol {
+        margin-bottom: 30px;
+    }
+    .trustedBy ul {
+        justify-content: center;
+        gap: 40px;
+    }
+    .fieldsCard .icon img {
+        margin: 25px auto;
+    }
+    .queueFieldsTitle::after {
+        right: -10px;
+        top: -53px;
+    }
+    .queueFieldsTitle::before {
+        left: -5px;
+        top: -53px;
+    }
+    .queueFieldsTitle h3 {
+        font-size: 30px;
+    }
+    ul.open-grt-menu {
+        width: 90%;
+    }
+    .testimonialCard .blockquote {
+        font-size: 25px;
+        line-height: 39px;
+    }
+    .blockquoteTopImage {
+        left: 0;
+    }
+    .blockquoteBottomImage {
+        right: 0;
+    }
+    .subscripeTextPart h3 {
+        font-size: 36px;
+        line-height: 47px;
+        padding: 0 5%;
+        text-align: center;
+    }
+    .formContentPart span {
+        text-align: center;
+    }
+}
+
+
+/********************************/
+
+
+/*      Css      */
+
+
+/********************************/
+
+@media only screen and (max-width: 769px) {
+    .barnddescriptionPart .sectionTitle h3 {
+        font-size: 25px !important;
+        line-height: 32px;
+        font-family: 'Alexandria-SemiBold';
+    }
+    .buttonRightPart .btn-outline-primary {
+        display: block;
+        width: 100%;
+        margin: 15px 0;
+    }
+    .sectionTitle h3 {
+        font-size: 30px !important;
+        margin-bottom: 10px;
+        line-height: 38px;
+    }
+    .sectionTitle p {
+        font-size: 16px !important;
+        line-height: 26px;
+        padding: 0 !important;
+    }
+    ul.open-grt-menu {
+        padding: 0 15px;
+    }
+    ul.open-grt-menu {
+        width: 100%;
+    }
+    .testimonialCard .blockquote {
+        font-size: 18px;
+        line-height: 29px;
+    }
+    .testimonialInfo h4 {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 2px;
+    }
+    .testimonialInfo p {
+        font-size: 15px;
+        line-height: 19px;
+    }
+    .accordion-button {
+        font-size: 16px;
+        min-height: 67px;
+        padding: 0 12px;
+    }
+    ul.buttonOptionGroup {
+        display: block;
+    }
+    ul.buttonOptionGroup li .btn {
+        width: 100%;
+        display: block;
+        margin: 10px 0;
+    }
+    .readyGetStarted .sectionTitle {
+        background-size: 114px;
+        background-position: -31px 18px;
+    }
+    .middleFooterPart .list {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+    .subscripeTextPart h3 {
+        padding: 0 0%;
+    }
+    .subscripeTextPart h3 {
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 18px;
+    }
+}
+
+
+/********************************/
+
+
+/*      Css      */
+
+
+/********************************/
+
+@media only screen and (max-width: 575px) {
+    .queueFieldsTitle h3 {
+        font-size: 25px;
+        line-height: 36px;
+    }
+    .servicesContentLinkTextPart h3 {
+        font-size: 26px;
+    }
+    .readyGetStarted .sectionTitle {
+        background-position: 0px 29px;
+        background-size: 89px;
+    }
+    img.yellowStarImage {
+        top: -66px;
+    }
+    img.ipadVectorImage {
+        top: -41px;
+        left: -39px;
+    }
+}
+
+
+/********************************/
+
+
+/*      Css      */
+
+
+/********************************/
+
+@media screen and (max-width: 450px) {
+    .barnddescriptionPart ul {
+        display: block;
+    }
+    .barnddescriptionPart ul li .btn {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .subscripeTextPart h3 {
+        font-size: 27px;
+        margin-bottom: 27px;
+    }
+    .readyGetStarted .mainImage {
+        margin-bottom: -25%;
+    }
+    .footerBottom ul {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+/********************************/
+
+
+/*      Css      */
+
+
+/********************************/
+
+@media screen and (max-width: 315px) {}
+
+
+/********************************/
+
+
+/*      Css      */
+
+
+/********************************/
+
+@media screen and (max-width: 390px) {
+    .subscripeTextPart h3 {
+        font-size: 19px;
+        margin-bottom: 17px;
+        line-height: 28px;
+    }
+    .formContentPart span {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
